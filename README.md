@@ -9,7 +9,7 @@
 
 ## Overview
 
-**DisplayIQ** is a practice-driven, hardware-aware implementation of image enhancement algorithms—built to reflect how real-world display pipelines are developed, profiled, and prepared for deployment in embedded and SoC environments.
+**DisplayIQ** is a hardware-aware implementation of classical image enhancement algiorithms, designed to reflect how real-world display pipelines are developed, optimized, and prepared for deployment in embedded and SoC environments.
 
 This project demonstrates:
 - Prototyping image enhancement in **Python**
