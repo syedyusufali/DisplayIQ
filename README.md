@@ -45,13 +45,94 @@ It reflects typical engineering workflows where:
 - Then optimized and implemented in C++ for hardware deployment
 - With careful trade-offs in compute, memory, latency, and quality
 
-The repository is intended for **educational, interview prep, and systems-oriented ML engineering practice**.
-
 ---
-
 ## Demo
 
 ### Python Demo
 
 ```bash
 python examples/demo_enhancement.ipynb
+```
+
+### C++ Executable
+
+```bash
+./enhance data/sample.jpg
+```
+
+## Sample Output
+
+```yaml
+Latency: 7.34 ms
+Input size: 768.00 KB
+Output size: 768.00 KB
+```
+---
+
+## Example Output
+
+| Original | Enhanced (C++ Accelerated) |
+|----------|----------------------------|
+| ![original](assets/original.jpg) | ![enhanced](assets/enhanced.jpg) |
+
+---
+
+## Directory Structure
+
+```plaintext
+displayiq/
+├── displayiq/         # Python enhancement and evaluation modules
+├── cpp/               # C++ engine, pybind11 wrapper, and CLI executable
+│   ├── include/
+│   ├── src/
+│   ├── bindings/
+│   └── main.cpp
+├── examples/          # Notebooks and Python demos
+├── tests/             # Unit tests
+├── data/              # Sample images (not versioned)
+├── README.md
+```
+
+---
+
+## Technologies Used
+
+**Python 3.8+**
+- NumPy  
+- OpenCV  
+- scikit-image  
+- matplotlib  
+
+**C++17**
+- OpenCV  
+- pybind11  
+- CMake  
+
+---
+
+## Future Enhancements
+
+- Add quantization-aware fixed-point simulation (8-bit / 10-bit)  
+- Export binary test vectors for hardware verification teams  
+- Add support for benchmarking on Jetson or Raspberry Pi  
+- Implement faster variants of CLAHE with tunable power-quality tradeoffs  
+- Build a Streamlit UI to allow interactive visual tuning  
+
+---
+
+## License
+
+This repository is provided under the **MIT License**.  
+Free to use for educational, research, or engineering portfolio purposes.
+
+---
+
+## Contact
+
+**Created by:** Syed Yusuf Ali 
+
+*PhD Candidate, Johns Hopkins University*  
+For questions or collaboration ideas, feel free to reach out via GitHub or [LinkedIn](https://www.linkedin.com/in/syedyusufjhu/).
+
+
+
