@@ -116,7 +116,7 @@ displayiq/
 - Export binary test vectors for hardware verification teams  
 - Add support for benchmarking on Jetson or Raspberry Pi  
 - Implement faster variants of CLAHE with tunable power-quality tradeoffs  
-- Build a Streamlit UI to allow interactive visual tuning  
+- Build a Streamlit UI to allow interactive visual tuning   
 
 ---
 
